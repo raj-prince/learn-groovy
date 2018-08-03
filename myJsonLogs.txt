@@ -1,0 +1,171 @@
+[
+{
+  "timeMillis" : 1525449362688,
+  "thread" : "main",
+  "level" : "ERROR",
+  "loggerName" : "org.springframework.boot.SpringApplication",
+  "message" : "Application startup failed",
+  "thrown" : {
+    "commonElementCount" : 0,
+    "localizedMessage" : "Failed to execute CommandLineRunner",
+    "message" : "Failed to execute CommandLineRunner",
+    "name" : "java.lang.IllegalStateException",
+    "cause" : {
+      "commonElementCount" : 12,
+      "localizedMessage" : "Wrong active port range specified!",
+      "message" : "Wrong active port range specified!",
+      "name" : "com.adobe.ffc.processor.exception.FTPClientException",
+      "extendedStackTrace" : [ {
+        "class" : "com.adobe.ffc.processor.utils.file.impl.FTPFileDownload",
+        "method" : "ftpLogin",
+        "file" : "FTPFileDownload.java",
+        "line" : 92,
+        "exact" : false,
+        "location" : "classes!/",
+        "version" : "?"
+      }, {
+        "class" : "com.adobe.ffc.processor.utils.file.impl.FTPFileDownload",
+        "method" : "start",
+        "file" : "FTPFileDownload.java",
+        "line" : 43,
+        "exact" : false,
+        "location" : "classes!/",
+        "version" : "?"
+      }, {
+        "class" : "com.adobe.ffc.processor.job.impl.DownloadBuildStep",
+        "method" : "process",
+        "file" : "DownloadBuildStep.java",
+        "line" : 48,
+        "exact" : false,
+        "location" : "classes!/",
+        "version" : "?"
+      }, {
+        "class" : "com.adobe.ffc.processor.app.Application",
+        "method" : "run",
+        "file" : "Application.java",
+        "line" : 106,
+        "exact" : false,
+        "location" : "classes!/",
+        "version" : "?"
+      }, {
+        "class" : "org.springframework.boot.SpringApplication",
+        "method" : "callRunner",
+        "file" : "SpringApplication.java",
+        "line" : 732,
+        "exact" : false,
+        "location" : "spring-boot-1.5.6.RELEASE.jar!/",
+        "version" : "1.5.6.RELEASE"
+      } ]
+    },
+    "extendedStackTrace" : [ {
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "callRunner",
+      "file" : "SpringApplication.java",
+      "line" : 735,
+      "exact" : false,
+      "location" : "spring-boot-1.5.6.RELEASE.jar!/",
+      "version" : "1.5.6.RELEASE"
+    }, {
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "callRunners",
+      "file" : "SpringApplication.java",
+      "line" : 716,
+      "exact" : true,
+      "location" : "spring-boot-1.5.6.RELEASE.jar!/",
+      "version" : "1.5.6.RELEASE"
+    }, {
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "afterRefresh",
+      "file" : "SpringApplication.java",
+      "line" : 703,
+      "exact" : true,
+      "location" : "spring-boot-1.5.6.RELEASE.jar!/",
+      "version" : "1.5.6.RELEASE"
+    }, {
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "run",
+      "file" : "SpringApplication.java",
+      "line" : 304,
+      "exact" : true,
+      "location" : "spring-boot-1.5.6.RELEASE.jar!/",
+      "version" : "1.5.6.RELEASE"
+    }, {
+      "class" : "com.adobe.ffc.processor.app.Application",
+      "method" : "main",
+      "file" : "Application.java",
+      "line" : 67,
+      "exact" : true,
+      "location" : "classes!/",
+      "version" : "?"
+    }, {
+      "class" : "sun.reflect.NativeMethodAccessorImpl",
+      "method" : "invoke0",
+      "file" : "NativeMethodAccessorImpl.java",
+      "line" : -2,
+      "exact" : false,
+      "location" : "?",
+      "version" : "1.8.0_161"
+    }, {
+      "class" : "sun.reflect.NativeMethodAccessorImpl",
+      "method" : "invoke",
+      "file" : "NativeMethodAccessorImpl.java",
+      "line" : 62,
+      "exact" : false,
+      "location" : "?",
+      "version" : "1.8.0_161"
+    }, {
+      "class" : "sun.reflect.DelegatingMethodAccessorImpl",
+      "method" : "invoke",
+      "file" : "DelegatingMethodAccessorImpl.java",
+      "line" : 43,
+      "exact" : false,
+      "location" : "?",
+      "version" : "1.8.0_161"
+    }, {
+      "class" : "java.lang.reflect.Method",
+      "method" : "invoke",
+      "file" : "Method.java",
+      "line" : 498,
+      "exact" : false,
+      "location" : "?",
+      "version" : "1.8.0_161"
+    }, {
+      "class" : "org.springframework.boot.loader.MainMethodRunner",
+      "method" : "run",
+      "file" : "MainMethodRunner.java",
+      "line" : 48,
+      "exact" : true,
+      "location" : "adobe-ffc-processor.jar",
+      "version" : "?"
+    }, {
+      "class" : "org.springframework.boot.loader.Launcher",
+      "method" : "launch",
+      "file" : "Launcher.java",
+      "line" : 87,
+      "exact" : true,
+      "location" : "adobe-ffc-processor.jar",
+      "version" : "?"
+    }, {
+      "class" : "org.springframework.boot.loader.Launcher",
+      "method" : "launch",
+      "file" : "Launcher.java",
+      "line" : 50,
+      "exact" : true,
+      "location" : "adobe-ffc-processor.jar",
+      "version" : "?"
+    }, {
+      "class" : "org.springframework.boot.loader.JarLauncher",
+      "method" : "main",
+      "file" : "JarLauncher.java",
+      "line" : 51,
+      "exact" : true,
+      "location" : "adobe-ffc-processor.jar",
+      "version" : "?"
+    } ]
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.jcl.Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+]
